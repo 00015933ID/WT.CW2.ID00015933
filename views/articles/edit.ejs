@@ -10,9 +10,9 @@
     <div class="container">
         <h1 class="mb-4">Edit Article</h1>
 
-        <form action="/articles" method="post"></form>
+        <form action="/articles/<%= article.id %>?_method=PUT" method="POST"></form>
 
-        <%- include('_form_fields')%>
+        <%- include('_form_fields') %>
     </div>
 </body>
 </html>
