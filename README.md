@@ -10,10 +10,27 @@ Users can create new articles by providing a title, description, and content usi
 
 ## How to Run the App Locally
 
-GitHub link: [https://github.com/00015933ID/WT.CW2.ID00015933.git]
-Change the main to master all commits pushed in master.
-
 Follow these steps to run the app on your local machine: Use npm (Node Package Manager) to install the dependencies listed in my project's package.json file:
 npm install
 This command will install all the dependencies listed in the package.json file, including dompurify, ejs, express, jsdom, marked, method-override, mongodb, mongoose, and slugify. Start the Application: After installing the dependencies, you can start my web application. Assuming I have an entry point file (server.js), use npm run devStart to run it because in package.json Icreated devStart to run.
 Once your application is running, open your web browser and navigate to the appropriate URL [http://localhost:5000] to access my web application locally.
+
+## Application Dependencies
+
+The following dependencies are required to run the application:
+
+- Node.js
+- Express.js
+- MongoDB (In my computer I can not download MongoDB but I used MongoDB Atlas, created account and created cluster to my project and I used url from this cluster)
+
+## Links
+
+- GitHub Repository [https://github.com/00015933ID/WT.CW2.ID00015933.git]. Change the main to master all commits pushed in master.
+- Hosted Application[ ]
+
+## Project Structure
+
+I used server.js instead of app.js. It is containing service layer logic.
+I did not use any images that is why I did not created public file. I used bootstrap to style my application.
+I used routes file and inside articles.js because my web application is about creating article.
+I used views\articles file contain 'templates of HTML'.

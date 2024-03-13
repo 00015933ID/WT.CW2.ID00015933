@@ -9,7 +9,9 @@ const app = express()
 mongoose.connect('mongodb+srv://Zarina:Zarina1414@cluster0.y9dy7gm.mongodb.net/?retryWrites=true&w=majority') 
 //To set view engine
 app.set('view engine', 'ejs')
+//Middleware is set up for handling form data
 app.use(express.urlencoded({extended: false}))
+//method overriding 
 app.use(methodOverride('_method'))
 
 app.get('/', async (req, res) => {

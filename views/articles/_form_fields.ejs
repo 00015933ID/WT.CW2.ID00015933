@@ -1,17 +1,22 @@
+<!-- Form group for the title input field -->
 <div class="form-group">
     <label for="title">Title</label>
+    <!-- Input field for the title, with the value set to the current article's title -->
     <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
 </div>
-
+<!-- Form group for the description textarea -->
 <div class="form-group">
     <label for="description">Description</label>
+    <!-- Textarea for the description, with the value set to the current article's description -->
     <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
 </div>
-
+<!-- Form group for the markdown textarea -->
 <div class="form-group">
     <label for="markdown">Markdown</label>
+    <!-- Textarea for the markdown content, with the value set to the current article's markdown -->
     <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
 </div>
-
+<!-- Link to cancel and return to the list of articles -->
 <a href="/" class="btn btn-secondary mt-3">Cancel</a>
+<!-- Button to submit the form and save the changes -->
 <button type="submit" class= "btn btn-primary mt-3 ">Save</button>
